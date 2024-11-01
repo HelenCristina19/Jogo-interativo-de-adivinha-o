@@ -4,22 +4,17 @@ let tentativas = 0;
 const maxTentativas = 10;
 
 document.getElementById('startGame').addEventListener('click', startGame);
-document.getElementById('startgame').addEventListener('click', startgame);
 document.getElementById('submitGuess').addEventListener('click', submitGuess);
 
-function startGame() {
-    numeroSecreto = Math.floor(Math.random() * numeroMaximo) + 1;
-    document.getElementById('gameArea').classList.remove('hidden');
-}
 
-function startgame() {
+function startGame() {
     numeroSecreto = Math.floor(Math.random() * numeroMaximo) + 1;
     tentativas = 0; // Reinicia as tentativas
     document.getElementById('gameArea').classList.remove('hidden');
     document.getElementById('feedback').innerText = '';
     document.getElementById('tentativasRestantes').innerText = `Tentativas restantes: ${maxTentativas}`;
     document.getElementById('question').innerText = `Estou pensando em um número entre 1 e ${numeroMaximo}. Você só tem ${maxTentativas} tentativas.`;
-    document.getElementById('startgame').innerText = 'REINICIAR'; // Muda o texto do botão
+    document.getElementById('startGame').innerText = 'REINICIAR'; // Muda o texto do botão
 }
 
 function submitGuess() {
@@ -41,7 +36,7 @@ function submitGuess() {
         if (tentativas >= maxTentativas) {
             document.getElementById('feedback').innerText = `Você esgotou suas tentativas. O número secreto era ${numeroSecreto}.`;
             document.getElementById('gameArea').classList.add('hidden'); // Ocultar após as tentativas acabarem
-            document.getElementById('startgame').innerText = 'Reiniciar Jogo'; // Restaura o texto para "Reiniciar"
+            document.getElementById('startGame').innerText = 'Reiniciar Jogo'; // Restaura o texto para "Reiniciar"
         } else {
             document.getElementById('feedback').innerText = chute > numeroSecreto ? `O número secreto é menor que ${chute}.` : `O número secreto é maior que ${chute}.`;
         }
