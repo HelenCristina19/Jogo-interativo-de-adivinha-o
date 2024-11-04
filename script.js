@@ -13,7 +13,7 @@ function startGame() {
     document.getElementById('gameArea').classList.remove('hidden');
     document.getElementById('feedback').innerText = '';
     document.getElementById('tentativasRestantes').innerText = `Tentativas restantes: ${maxTentativas}`;
-    document.getElementById('question').innerText = `Estou pensando em um número entre 1 e ${numeroMaximo}. Você só tem ${maxTentativas} tentativas.`;
+    document.getElementById('question').innerText = `Estou pensando em um número de 1 a ${numeroMaximo}. Você só tem ${maxTentativas} tentativas.`;
     document.getElementById('startGame').innerText = 'REINICIAR'; // Muda o texto do botão
 }
 

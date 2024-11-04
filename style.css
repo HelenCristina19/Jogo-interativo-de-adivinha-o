@@ -9,8 +9,9 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-image: url(data:image/gif;base64, https://pin.it/3OGQPoKmf);
+    background-color: #737e8f;
 }
+
 
 main {
     display: flex;
@@ -73,7 +74,7 @@ input {
 
 button {
     padding: 10px 20px;
-    background-color: #5928a7;
+    background-color: #0d88ad;
     color: white;
     border: none;
     border-radius: 10px;
