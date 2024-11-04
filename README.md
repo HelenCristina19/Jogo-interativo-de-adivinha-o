@@ -1,7 +1,7 @@
 # Jogo interativo de adivinhacao
 Este jogo interativo foi realizado como tarefa da Trilha 3 do curso Descodificadas.
 
-Link da página : https://helencristina19.github.io/Jogo-interativo-de-adivinha-o/
+Link da página :  https://helencristina19.github.io/Jogo-interativo-de-advinhacao
 
 OBJETIVO DO PROJETO
 
